@@ -221,7 +221,7 @@ local function AEFFAYO_fake_script()
 	
 	UIS.InputBegan:Connect(function(input, gameProcessed)
 		if gameProcessed then return end
-		if input.KeyCode == Enum.KeyCode.Insert or input.KeyCode == Enum.KeyCode.Home then
+		if input.KeyCode == Enum.KeyCode.Insert then
 			visible = not visible
 			if visible then
 				frame.Enabled = true
