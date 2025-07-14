@@ -6716,7 +6716,7 @@ addcmd('serverinfo',{'info','sinfo'},function(args, speaker)
 
 		playerid.Name = "playerid"
 		playerid.Parent = background
-		playerid.BackgroundTransparency = 1a
+		playerid.BackgroundTransparency = 1
 		playerid.BorderSizePixel = 0
 		playerid.Position = UDim2.new(0, 5, 0, 35)
 		playerid.Size = UDim2.new(0, 100, 0, 20)
