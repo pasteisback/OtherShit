@@ -1,152 +1,104 @@
-local tJhkS8ltYb76tx = Instance.new("ScreenGui")
-local _4p0K29KXs_ = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local TextBox = Instance.new("TextBox")
-local UICorner_2 = Instance.new("UICorner")
-local continue = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local Frame = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
+local Executor = Instance.new("ScreenGui")
+local ExecutorUI = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local scriptbox = Instance.new("TextBox")
 local exec = Instance.new("TextButton")
-local clr = Instance.new("TextButton")
-local TextBox_2 = Instance.new("TextBox")
-local TextLabel_2 = Instance.new("TextLabel")
+local cls = Instance.new("TextButton")
+local search = Instance.new("TextBox")
+local scriptlist = Instance.new("ScrollingFrame")
+local HighlightingLabel = Instance.new("TextLabel")
 
-tJhkS8ltYb76tx.Name = "tJ:hk&S8l['tYb76tx/^"
-tJhkS8ltYb76tx.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-tJhkS8ltYb76tx.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-tJhkS8ltYb76tx.ResetOnSpawn = false
+Executor.Name = "Executor"
+Executor.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Executor.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-_4p0K29KXs_.Name = "4£p*0|K2@9*,'KX\\s(_="
-_4p0K29KXs_.Parent = tJhkS8ltYb76tx
-_4p0K29KXs_.AnchorPoint = Vector2.new(0.5, 0.5)
-_4p0K29KXs_.BackgroundColor3 = Color3.fromRGB(0, 0, 127)
-_4p0K29KXs_.BorderColor3 = Color3.fromRGB(0, 0, 0)
-_4p0K29KXs_.BorderSizePixel = 0
-_4p0K29KXs_.Position = UDim2.new(0.5, 0, 0.5, 0)
-_4p0K29KXs_.Size = UDim2.new(0.184119105, 0, 0.145194277, 0)
-_4p0K29KXs_.Visible = false
+ExecutorUI.Name = "ExecutorUI"
+ExecutorUI.Parent = Executor
+ExecutorUI.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ExecutorUI.BorderSizePixel = 0
+ExecutorUI.Position = UDim2.new(0.35221675, 0, 0.295501024, 0)
+ExecutorUI.Size = UDim2.new(0.295566499, 0, 0.408997953, 0)
 
-UICorner.CornerRadius = UDim.new(0, 5)
-UICorner.Parent = _4p0K29KXs_
+title.Name = "title"
+title.Parent = ExecutorUI
+title.BackgroundTransparency = 1.000
+title.Size = UDim2.new(1, 0, 0.100000001, 0)
+title.Font = Enum.Font.SourceSansBold
+title.Text = "Script Executor"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 24.000
 
-TextLabel.Parent = _4p0K29KXs_
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(1, 0, 0.295774639, 0)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Admin Login"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-TextBox.Parent = _4p0K29KXs_
-TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.BorderSizePixel = 0
-TextBox.Position = UDim2.new(0.229110509, 0, 0.373239428, 0)
-TextBox.Size = UDim2.new(0.53908354, 0, 0.246478871, 0)
-TextBox.Font = Enum.Font.SourceSans
-TextBox.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.PlaceholderText = "Input Password!"
-TextBox.Text = ""
-TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.TextScaled = true
-TextBox.TextSize = 14.000
-TextBox.TextWrapped = true
-
-UICorner_2.CornerRadius = UDim.new(0, 5)
-UICorner_2.Parent = TextBox
-
-continue.Name = "continue"
-continue.Parent = _4p0K29KXs_
-continue.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
-continue.BorderColor3 = Color3.fromRGB(0, 0, 0)
-continue.BorderSizePixel = 0
-continue.Position = UDim2.new(0.229110509, 0, 0.683098614, 0)
-continue.Size = UDim2.new(0.53908354, 0, 0.267605633, 0)
-continue.Font = Enum.Font.SourceSans
-continue.Text = "Login"
-continue.TextColor3 = Color3.fromRGB(255, 255, 255)
-continue.TextScaled = true
-continue.TextSize = 14.000
-continue.TextWrapped = true
-
-UICorner_3.CornerRadius = UDim.new(0, 5)
-UICorner_3.Parent = continue
-
-Frame.Parent = tJhkS8ltYb76tx
-Frame.AnchorPoint = Vector2.new(0.5, 0.5)
-Frame.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
-Frame.Size = UDim2.new(0.188585609, 0, 0.255623728, 0)
-
-UICorner_4.Parent = Frame
+scriptbox.Name = "scriptbox"
+scriptbox.Parent = ExecutorUI
+scriptbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+scriptbox.Position = UDim2.new(0.0166666675, 0, 0.125, 0)
+scriptbox.Size = UDim2.new(0.966666639, 0, 0.400000006, 0)
+scriptbox.ClearTextOnFocus = false
+scriptbox.Font = Enum.Font.Code
+scriptbox.MultiLine = true
+scriptbox.Text = ""
+scriptbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+scriptbox.TextSize = 16.000
+scriptbox.TextWrapped = true
+scriptbox.TextXAlignment = Enum.TextXAlignment.Left
+scriptbox.TextYAlignment = Enum.TextYAlignment.Top
 
 exec.Name = "exec"
-exec.Parent = Frame
-exec.BackgroundColor3 = Color3.fromRGB(182, 182, 182)
-exec.BorderColor3 = Color3.fromRGB(0, 0, 0)
-exec.BorderSizePixel = 0
-exec.Position = UDim2.new(0.0289473683, 0, 0.84799999, 0)
-exec.Size = UDim2.new(0.268421054, 0, 0.115999997, 0)
+exec.Parent = ExecutorUI
+exec.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+exec.Position = UDim2.new(0.0166666675, 0, 0.550000012, 0)
+exec.Size = UDim2.new(0.150000006, 0, 0.075000003, 0)
 exec.Font = Enum.Font.SourceSans
 exec.Text = "Execute"
-exec.TextColor3 = Color3.fromRGB(0, 0, 0)
-exec.TextSize = 25.000
-exec.TextWrapped = true
+exec.TextColor3 = Color3.fromRGB(255, 255, 255)
+exec.TextSize = 16.000
 
-clr.Name = "clr"
-clr.Parent = Frame
-clr.BackgroundColor3 = Color3.fromRGB(182, 182, 182)
-clr.BorderColor3 = Color3.fromRGB(0, 0, 0)
-clr.BorderSizePixel = 0
-clr.Position = UDim2.new(0.334210515, 0, 0.84799999, 0)
-clr.Size = UDim2.new(0.268421054, 0, 0.115999997, 0)
-clr.Font = Enum.Font.SourceSans
-clr.Text = "Clear"
-clr.TextColor3 = Color3.fromRGB(0, 0, 0)
-clr.TextSize = 25.000
-clr.TextWrapped = true
+cls.Name = "cls"
+cls.Parent = ExecutorUI
+cls.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+cls.Position = UDim2.new(0.183333337, 0, 0.550000012, 0)
+cls.Size = UDim2.new(0.150000006, 0, 0.075000003, 0)
+cls.Font = Enum.Font.SourceSans
+cls.Text = "Clear"
+cls.TextColor3 = Color3.fromRGB(255, 255, 255)
+cls.TextSize = 16.000
 
-TextBox_2.Parent = Frame
-TextBox_2.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
-TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox_2.BorderSizePixel = 0
-TextBox_2.Position = UDim2.new(0.0394736826, 0, 0.0960000008, 0)
-TextBox_2.Size = UDim2.new(0.91842103, 0, 0.723999977, 0)
-TextBox_2.Font = Enum.Font.SourceSans
-TextBox_2.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox_2.PlaceholderText = "Enter a script!"
-TextBox_2.Text = ""
-TextBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox_2.TextSize = 14.000
-TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
-TextBox_2.TextYAlignment = Enum.TextYAlignment.Top
+search.Name = "search"
+search.Parent = ExecutorUI
+search.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+search.Position = UDim2.new(0.0166666675, 0, 0.649999976, 0)
+search.Size = UDim2.new(0.966666639, 0, 0.075000003, 0)
+search.Font = Enum.Font.SourceSans
+search.PlaceholderText = "Search ScriptBlox (e.g. Blox Fruits)"
+search.Text = ""
+search.TextColor3 = Color3.fromRGB(255, 255, 255)
+search.TextSize = 16.000
 
-TextLabel_2.Parent = Frame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.0289473683, 0, 0, 0)
-TextLabel_2.Size = UDim2.new(0.971052647, 0, 0.0960000083, 0)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "Admin Executor"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+scriptlist.Name = "scriptlist"
+scriptlist.Parent = ExecutorUI
+scriptlist.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+scriptlist.Position = UDim2.new(0.0166666675, 0, 0.75, 0)
+scriptlist.Size = UDim2.new(0.966666639, 0, 0.25, 0)
+scriptlist.CanvasSize = UDim2.new(0, 0, 0, 2000)
+scriptlist.ScrollBarThickness = 8
 
-local function OZGAN_fake_script()
-	local script = Instance.new('LocalScript', _4p0K29KXs_)
+HighlightingLabel.Name = "HighlightingLabel"
+HighlightingLabel.Parent = ExecutorUI
+HighlightingLabel.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+HighlightingLabel.BackgroundTransparency = 0.950
+HighlightingLabel.ClipsDescendants = true
+HighlightingLabel.Position = UDim2.new(0.0166666675, 0, 0.125, 0)
+HighlightingLabel.Size = UDim2.new(0.966666639, 0, 0.400000006, 0)
+HighlightingLabel.Font = Enum.Font.Code
+HighlightingLabel.Text = ""
+HighlightingLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+HighlightingLabel.TextSize = 16.000
+HighlightingLabel.TextWrapped = true
+HighlightingLabel.TextXAlignment = Enum.TextXAlignment.Left
+HighlightingLabel.TextYAlignment = Enum.TextYAlignment.Top
+
+local function YTDSSE_fake_script()
+	local script = Instance.new('LocalScript', ExecutorUI)
 
 	local UIS = game:GetService("UserInputService")
 	local gui = script.Parent
@@ -166,51 +118,125 @@ local function OZGAN_fake_script()
 		end
 	end)
 end
-coroutine.wrap(OZGAN_fake_script)()
-local function YMASZ_fake_script() 
-	local script = Instance.new('LocalScript', _4p0K29KXs_)
+coroutine.wrap(YTDSSE_fake_script)()
+local function BTBBONW_fake_script()
+	local script = Instance.new('LocalScript', ExecutorUI)
 
-	local password = '?2}uj4f3]V1{`y?zw"U`tD#Y~{T~L=9#:vE1vh%!a6_pqnFGV)'
-	local value = script.Parent.Parent["i~rVGBlb1C99zAIS55EQ"]
-	local inputBox = script.Parent.TextBox
-	local button = script.Parent.continue
+	local HttpService = game:GetService("HttpService")
+	local UIS = game:GetService("UserInputService")
 	
-	function auth(key)
-		return readfile and readfile("saves.txt") == key and key == password
+	local resultsFrame = script.Parent.scriptlist
+	local scriptBox = script.Parent.scriptbox
+	local searchBox = script.Parent.search
+	local executeButton = script.Parent.exec
+	local clearButton = script.Parent.cls
+	local highlightFrame = script.Parent.HighlightingLabel
+	
+	local function displayResults(results)
+		for _, child in ipairs(resultsFrame:GetChildren()) do
+			if child:IsA("Frame") then child:Destroy() end
+		end
+	
+		for i, script in ipairs(results) do
+			local frame = Instance.new("Frame")
+			frame.Size = UDim2.new(1, 0, 0, 60)
+			frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			frame.Position = UDim2.new(0, 0, 0, (i - 1) * 65)
+			frame.Parent = resultsFrame
+	
+			local label = Instance.new("TextLabel")
+			label.Text = script.title
+			label.TextColor3 = Color3.fromRGB(255, 255, 255)
+			label.Size = UDim2.new(1, -100, 1, 0)
+			label.Position = UDim2.new(0, 10, 0, 0)
+			label.BackgroundTransparency = 1
+			label.TextXAlignment = Enum.TextXAlignment.Left
+			label.Font = Enum.Font.SourceSansBold
+			label.TextSize = 16
+			label.Parent = frame
+	
+			local execute = Instance.new("TextButton")
+			execute.Text = "Execute"
+			execute.Size = UDim2.new(0, 90, 0, 30)
+			execute.Position = UDim2.new(1, -100, 0.5, -15)
+			execute.BackgroundColor3 = Color3.fromRGB(60, 120, 60)
+			execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+			execute.Font = Enum.Font.SourceSans
+			execute.TextSize = 14
+			execute.Parent = frame
+	
+			execute.MouseButton1Click:Connect(function()
+				local code = game:HttpGet("https://scriptblox.com/api/script/fetch/" .. script.slug)
+				local json = HttpService:JSONDecode(code)
+				scriptBox.Text = json.result.script
+			end)
+		end
 	end
 	
-	button.MouseButton1Click:Connect(function()
-		local input = inputBox.Text
+	scriptBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local text = scriptBox.Text
+		local lastChar = text:sub(-1)
+		local autoClose = {
+			["("] = ")",
+			["["] = "]",
+			["{"] = "}",
+			["\""] = "\"",
+			["'"] = "'"
+		}
 	
-		if input == "" then
+		if autoClose[lastChar] then
+			local cursor = scriptBox.CursorPosition
+			scriptBox.Text = text .. autoClose[lastChar]
+			scriptBox.CursorPosition = cursor
+		end
+	end)
+	
+	searchBox.FocusLost:Connect(function(enter)
+		if searchBox.Text == "" then return end
+	
+		local query = HttpService:UrlEncode(searchBox.Text)
+		local success, result = pcall(function()
+			return HttpService:JSONDecode(game:HttpGet("https://scriptblox.com/api/script/search?q=" .. query))
+		end)
+	
+		if success and result.result and result.result.scripts then
+			displayResults(result.result.scripts)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Error",
+				Text = "Failed to connect to ScriptBlox.",
+				Duration = 5,
+			})
+		end
+	end)
+	
+	executeButton.MouseButton1Click:Connect(function()
+		if scriptBox.Text == "" then
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "Error",
 				Text = "Please enter a password!",
 				Duration = 5,
 			})
-			return
 		end
-	
-		if input == password then
-			if writefile then writefile("saves.txt", password) end
-			if auth(input) then
-				value.Value = true
-				script.Parent.Visible = false
-				script.Parent.Parent.Frame.Visible = true
-			end
-		else
+		local success, err = pcall(function()
+			loadstring(scriptBox.Text)()
+		end)
+		if not success then
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "Error",
-				Text = "Incorrect Password!",
+				Text = err,
 				Duration = 5,
 			})
-			script.Parent.Parent:Destroy()
 		end
 	end)
+	
+	clearButton.MouseButton1Click:Connect(function()
+		scriptBox.Text = ""
+	end)
 end
-coroutine.wrap(YMASZ_fake_script)()
-local function AEFFAYO_fake_script()
-	local script = Instance.new('LocalScript', tJhkS8ltYb76tx)
+coroutine.wrap(BTBBONW_fake_script)()
+local function LXDLIFT_fake_script()
+	local script = Instance.new('LocalScript', Executor)
 
 	local UIS = game:GetService("UserInputService")
 	
@@ -231,66 +257,4 @@ local function AEFFAYO_fake_script()
 		end
 	end)
 end
-coroutine.wrap(AEFFAYO_fake_script)()
-local function LNOP_fake_script()
-	local script = Instance.new('LocalScript', tJhkS8ltYb76tx)
-
-	while wait() do
-		if script.Parent["i~rVGBlb1C99zAIS55EQ"].Value == false then
-			script.Parent.Frame.Visible = false
-		end
-	end
-end
-coroutine.wrap(LNOP_fake_script)()
-local function RLRC_fake_script()
-	local script = Instance.new('LocalScript', Frame)
-
-	local UIS = game:GetService("UserInputService")
-	local gui = script.Parent
-	local dragging, startPos, dragStart
-	
-	gui.InputBegan:Connect(function(i)
-		if i.UserInputType == Enum.UserInputType.MouseButton1 or i.UserInputType == Enum.UserInputType.Touch then
-			dragging, dragStart, startPos = true, i.Position, gui.Position
-			i.Changed:Connect(function() if i.UserInputState == Enum.UserInputState.End then dragging = false end end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(i)
-		if dragging and (i.UserInputType == Enum.UserInputType.MouseMovement or i.UserInputType == Enum.UserInputType.Touch) then
-			local d = i.Position - dragStart
-			gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + d.X, startPos.Y.Scale, startPos.Y.Offset + d.Y)
-		end
-	end)
-end
-coroutine.wrap(RLRC_fake_script)()
-local function SPEJXGP_fake_script()
-	local script = Instance.new('LocalScript', Frame)
-
-	local value = script.Parent.Parent["i~rVGBlb1C99zAIS55EQ"]
-	local inputBox = script.Parent.TextBox
-	local execBtn = script.Parent.exec
-	local clearBtn = script.Parent.clr
-	
-	local function executeCode(code)
-		local success, result = pcall(loadstring(code))
-		if not success then
-			game.StarterGui:SetCore("SendNotification", {
-				Title = "Error",
-				Text = result,
-				Duration = 5,
-			})
-		end
-	end
-	
-	execBtn.MouseButton1Click:Connect(function()
-		if value.Value == true then
-			executeCode(inputBox.Text)
-		end
-	end)
-	
-	clearBtn.MouseButton1Click:Connect(function()
-		inputBox.Text = ""
-	end)
-end
-coroutine.wrap(SPEJXGP_fake_script)()
+coroutine.wrap(LXDLIFT_fake_script)()
